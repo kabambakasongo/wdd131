@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" role="img"
+    aria-labelledby="webDevTitle">
+    <title id="webDevTitle">Laptop displaying colorful code</title>
+    <defs>
+        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#d7ecef" />
+            <stop offset="1" stop-color="#f6e7d8" />
+        </linearGradient>
+        <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#123b4a" />
+            <stop offset="1" stop-color="#0b2833" />
+        </linearGradient>
+    </defs>
+    <rect width="640" height="400" fill="url(#bg)" />
+    <circle cx="90" cy="75" r="48" fill="#f2cc8f" opacity="0.75" />
+    <circle cx="570" cy="330" r="78" fill="#e07a5f" opacity="0.18" />
+    <path d="M0 330c105-42 190-30 296 8s224 44 344-6v68H0z" fill="#176b73" opacity="0.12" />
+    <g>
+        <rect x="135" y="82" width="370" height="226" rx="16" fill="#0b2833" />
+        <rect x="151" y="98" width="338" height="182" rx="8" fill="url(#screen)" />
+        <circle cx="170" cy="113" r="4" fill="#e07a5f" />
+        <circle cx="184" cy="113" r="4" fill="#f2cc8f" />
+        <circle cx="198" cy="113" r="4" fill="#81b29a" />
+        <g fill="none" stroke-linecap="round" stroke-width="8">
+            <path d="M185 151l-26 24 26 24" stroke="#f2cc8f" />
+            <path d="M299 151l26 24-26 24" stroke="#f2cc8f" />
+            <path d="M248 143l-14 64" stroke="#e07a5f" />
+        </g>
+        <g fill="#d7ecef" opacity="0.85">
+            <rect x="349" y="148" width="101" height="10" rx="5" />
+            <rect x="349" y="173" width="76" height="10" rx="5" />
+            <rect x="349" y="198" width="92" height="10" rx="5" />
+            <rect x="349" y="223" width="58" height="10" rx="5" />
+        </g>
+    </g>
+    <path d="M105 308h430l42 54H63z" fill="#c8d9dc" />
+    <path d="M63 362h514l-16 16H79z" fill="#a9c1c5" />
+    <rect x="285" y="320" width="70" height="10" rx="5" fill="#8faeb3" />
+</svg>
