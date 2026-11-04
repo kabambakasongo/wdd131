@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+  <meta name="description" content="A responsive album of Latter-day Saint temples.">
+  <meta name="author" content="Kabamba Kasongo Ledoux">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu" aria-label="Open menu"></button>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <div class="album">
+      <figure>
+        <img src="https://picsum.photos/seed/temple1/400/300" alt="Salt Lake Temple" width="400" height="300" loading="lazy">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/seed/temple2/400/300" alt="Provo Temple" width="400" height="300" loading="lazy">
+        <figcaption>Provo Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/seed/temple3/400/300" alt="Nauvoo Temple" width="400" height="300" loading="lazy">
+        <figcaption>Nauvoo Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/seed/temple4/400/300" alt="Rome Temple" width="400" height="300" loading="lazy">
+        <figcaption>Rome Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/seed/temple5/400/300" alt="Paris Temple" width="400" height="300" loading="lazy">
+        <figcaption>Paris Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/seed/temple6/400/300" alt="Tokyo Temple" width="400" height="300" loading="lazy">
+        <figcaption>Tokyo Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/seed/temple7/400/300" alt="Sao Paulo Temple" width="400" height="300" loading="lazy">
+        <figcaption>Sao Paulo Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/seed/temple8/400/300" alt="Accra Temple" width="400" height="300" loading="lazy">
+        <figcaption>Accra Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://picsum.photos/seed/temple9/400/300" alt="Sydney Temple" width="400" height="300" loading="lazy">
+        <figcaption>Sydney Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Ton Nom</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
