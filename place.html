@@ -1,122 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore the Democratic Republic of the Congo, from the Congo River and tropical rainforest to the capital city of Kinshasa.">
-  <meta name="author" content="Kabamba Kasongo Ledoux">
-  <meta name="theme-color" content="#123c35">
-  <title>Democratic Republic of the Congo | WDD 131</title>
-  <link rel="stylesheet" href="styles/place.css">
-  <script src="scripts/place.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the Democratic Republic of the Congo, from the Congo River and tropical rainforest to the capital city of Kinshasa.">
+    <meta name="author" content="Kabamba Kasongo Ledoux">
+    <meta name="theme-color" content="#123c35">
+    <title>Democratic Republic of the Congo | WDD 131</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Democratic Republic of the Congo home">
-      <span class="brand-mark" aria-hidden="true">DRC</span>
-      <span>Country profile</span>
-    </a>
-    <nav aria-label="Main navigation">
-      <a href="#overview">Overview</a>
-      <a href="#weather">Weather</a>
-      <a href="#landscape">Landscape</a>
-    </nav>
-  </header>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Democratic Republic of the Congo home">
+            <span class="brand-mark" aria-hidden="true">DRC</span>
+            <span>Country profile</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="#overview">Overview</a>
+            <a href="#weather">Weather</a>
+            <a href="#landscape">Landscape</a>
+        </nav>
+    </header>
 
-  <main id="top">
-    <figure class="hero">
-      <picture>
-        <source
-          srcset="images/drc-hero-720.webp 720w, images/drc-hero-1440.webp 1440w"
-          sizes="(max-width: 720px) 100vw, 1100px"
-          type="image/webp">
-        <img
-          src="images/drc-hero-1440.webp"
-          alt="A view of the Congo River winding through lush green tropical hills"
-          width="1440"
-          height="810"
-          fetchpriority="high">
-      </picture>
-      <figcaption class="hero-caption">
-        <p class="eyebrow">Central Africa</p>
-        <h1>Democratic Republic<br class="wide-break"> of the Congo</h1>
-        <p>One country. A world of nature.</p>
-      </figcaption>
-      <span class="hero-note">Congo River basin</span>
-    </figure>
+    <main id="top">
+        <figure class="hero">
+            <picture>
+                <source srcset="images/drc-hero-720.webp 720w, images/drc-hero-1440.webp 1440w"
+                    sizes="(max-width: 720px) 100vw, 1100px" type="image/webp">
+                <img src="images/drc-hero-1440.webp"
+                    alt="A view of the Congo River winding through lush green tropical hills" width="1440" height="810"
+                    fetchpriority="high">
+            </picture>
+            <span class="hero-note">Congo River basin</span>
+            <figcaption class="hero-caption">
+                <p class="eyebrow">Central Africa</p>
+                <h1>Democratic Republic<br class="wide-break"> of the Congo</h1>
+                <p>One country. A world of nature.</p>
+            </figcaption>
+        </figure>
 
-    <div class="content-grid">
-      <section class="card overview-card" id="overview" aria-labelledby="overview-title">
-        <p class="eyebrow">Get to know the country</p>
-        <h2 id="overview-title">At the heart of Africa</h2>
-        <p>
-          The Democratic Republic of the Congo is a vast Central African nation shaped by the
-          Congo River and the world's second-largest tropical rainforest. Its extraordinary
-          landscapes support rich wildlife and diverse communities.
-        </p>
-        <dl class="facts">
-          <div>
-            <dt>Capital</dt>
-            <dd>Kinshasa</dd>
-          </div>
-          <div>
-            <dt>Region</dt>
-            <dd>Central Africa</dd>
-          </div>
-          <div>
-            <dt>Official language</dt>
-            <dd>French</dd>
-          </div>
-          <div>
-            <dt>Currency</dt>
-            <dd>Congolese franc</dd>
-          </div>
-        </dl>
-      </section>
+        <div class="content-grid">
+            <section class="card overview-card" id="overview" aria-labelledby="overview-title">
+                <p class="eyebrow">Get to know the country</p>
+                <h2 id="overview-title">At the heart of Africa</h2>
+                <p>
+                    The Democratic Republic of the Congo is a vast Central African nation shaped by the
+                    Congo River and the world's second-largest tropical rainforest. Its extraordinary
+                    landscapes support rich wildlife and diverse communities.
+                </p>
+                <dl class="facts">
+                    <div>
+                        <dt>Capital</dt>
+                        <dd>Kinshasa</dd>
+                    </div>
+                    <div>
+                        <dt>Region</dt>
+                        <dd>Central Africa</dd>
+                    </div>
+                    <div>
+                        <dt>Official language</dt>
+                        <dd>French</dd>
+                    </div>
+                    <div>
+                        <dt>Currency</dt>
+                        <dd>Congolese franc</dd>
+                    </div>
+                </dl>
+            </section>
 
-      <section class="card weather-card" id="weather" aria-labelledby="weather-title">
-        <p class="eyebrow">Kinshasa · sample conditions</p>
-        <h2 id="weather-title">
-          <svg class="weather-icon" viewBox="0 0 64 64" aria-hidden="true">
-            <circle cx="32" cy="31" r="11" fill="currentColor"></circle>
-            <path d="M32 5v8M32 51v8M5 31h8M51 31h8M13 12l6 6m26 26 6 6M51 12l-6 6M19 44l-6 6"
-              fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
-          </svg>
-          <span>Weather</span>
-        </h2>
-        <dl class="weather-data">
-          <div>
-            <dt>Temperature</dt>
-            <dd><span id="temperature">28</span><span aria-label="degrees Celsius">°C</span></dd>
-          </div>
-          <div>
-            <dt>Wind speed</dt>
-            <dd><span id="wind-speed">12</span><span aria-label="kilometers per hour"> km/h</span></dd>
-          </div>
-          <div>
-            <dt>Wind chill</dt>
-            <dd id="wind-chill" aria-live="polite">Not applicable</dd>
-          </div>
-        </dl>
-        <p class="weather-note">Wind chill is calculated only in cold, breezy conditions.</p>
-      </section>
-    </div>
+            <section class="card weather-card" id="weather" aria-labelledby="weather-title">
+                <p class="eyebrow">Kinshasa · sample conditions</p>
+                <h2 id="weather-title">
+                    <svg class="weather-icon" viewBox="0 0 64 64" aria-hidden="true">
+                        <circle cx="32" cy="31" r="11" fill="currentColor"></circle>
+                        <path d="M32 5v8M32 51v8M5 31h8M51 31h8M13 12l6 6m26 26 6 6M51 12l-6 6M19 44l-6 6" fill="none"
+                            stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+                    </svg>
+                    <span>Weather</span>
+                </h2>
+                <dl class="weather-data">
+                    <div>
+                        <dt>Temperature</dt>
+                        <dd><span id="temperature">28</span><abbr title="degrees Celsius">°C</abbr></dd>
+                    </div>
+                    <div>
+                        <dt>Wind speed</dt>
+                        <dd><span id="wind-speed">12</span> <abbr title="kilometers per hour">km/h</abbr></dd>
+                    </div>
+                    <div>
+                        <dt>Wind chill</dt>
+                        <dd id="wind-chill" aria-live="polite">Not applicable</dd>
+                    </div>
+                </dl>
+                <p class="weather-note">Wind chill is calculated only in cold, breezy conditions.</p>
+            </section>
+        </div>
 
-    <section class="landscape" id="landscape" aria-labelledby="landscape-title">
-      <div>
-        <p class="eyebrow">A land of remarkable scale</p>
-        <h2 id="landscape-title">Where the river meets the rainforest</h2>
-      </div>
-      <p>
-        The Congo River flows through a vast network of waterways, forests, and fertile land.
-        The country's varied habitats are home to rare species found nowhere else on Earth.
-      </p>
-    </section>
-  </main>
+        <section class="landscape" id="landscape" aria-labelledby="landscape-title">
+            <div>
+                <p class="eyebrow">A land of remarkable scale</p>
+                <h2 id="landscape-title">Where the river meets the rainforest</h2>
+            </div>
+            <p>
+                The Congo River flows through a vast network of waterways, forests, and fertile land.
+                The country's varied habitats are home to rare species found nowhere else on Earth.
+            </p>
+        </section>
+    </main>
 
-  <footer>
-    <p>&copy; <span id="current-year"></span> Kabamba Kasongo Ledoux · Democratic Republic of the Congo</p>
-    <p id="last-modified"></p>
-  </footer>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Kabamba Kasongo Ledoux · Democratic Republic of the Congo</p>
+        <p id="last-modified"></p>
+    </footer>
 </body>
+
 </html>

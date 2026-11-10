@@ -9,6 +9,20 @@
   --ink: #20302b;
   --muted: #53645d;
   --line: #dce3d8;
+  --white: #ffffff;
+  --soft-white: #f5f7ed;
+  --footer-text: #f1f5ee;
+  --nav-hover: #285247;
+  --hero-overlay-strong: #08231fd1;
+  --hero-overlay-soft: #08231f61;
+  --hero-overlay-clear: #123c3500;
+  --hero-note-border: #ffffff8c;
+  --hero-note-background: #0a2b27bf;
+  --card-shadow: #123c350f;
+  --weather-background: #eef4e9;
+  --weather-divider: #d6e0d1;
+  --weather-sun: #bd741a;
+  --weather-emoji: #a45b10;
   --font: "Trebuchet MS", Arial, sans-serif;
 }
 
@@ -46,7 +60,7 @@ a:focus-visible {
   min-height: 76px;
   padding: 0.8rem max(1.25rem, calc((100% - 1100px) / 2));
   background: var(--forest-deep);
-  color: #fff;
+  color: var(--white);
 }
 
 .brand {
@@ -82,13 +96,13 @@ nav {
 nav a {
   padding: 0.5rem 0.75rem;
   border-radius: 999px;
-  color: #fff;
+  color: var(--white);
   font-size: 0.9rem;
   text-decoration: none;
 }
 
 nav a:hover {
-  background: #285247;
+  background: var(--nav-hover);
 }
 
 main {
@@ -110,7 +124,7 @@ main {
 .hero::after {
   position: absolute;
   z-index: -1;
-  background: linear-gradient(90deg, rgb(8 35 31 / 82%) 0%, rgb(8 35 31 / 38%) 54%, transparent 100%);
+  background: linear-gradient(90deg, var(--hero-overlay-strong) 0%, var(--hero-overlay-soft) 54%, var(--hero-overlay-clear) 100%);
   content: "";
   inset: 0;
 }
@@ -132,7 +146,7 @@ main {
 .hero-caption {
   max-width: 700px;
   padding: clamp(2rem, 7vw, 5.5rem);
-  color: #fff;
+  color: var(--white);
 }
 
 .eyebrow {
@@ -158,7 +172,7 @@ main {
 
 .hero-caption > p:last-child {
   margin: 0.85rem 0 0;
-  color: #f5f7ed;
+  color: var(--soft-white);
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
@@ -167,10 +181,10 @@ main {
   right: 1rem;
   bottom: 1rem;
   padding: 0.35rem 0.7rem;
-  border: 1px solid rgb(255 255 255 / 55%);
+  border: 1px solid var(--hero-note-border);
   border-radius: 999px;
-  background: rgb(10 43 39 / 75%);
-  color: #fff;
+  background: var(--hero-note-background);
+  color: var(--white);
   font-size: 0.75rem;
 }
 
@@ -185,8 +199,8 @@ main {
   padding: clamp(1.35rem, 3vw, 2rem);
   border: 1px solid var(--line);
   border-radius: 1rem;
-  background: #fff;
-  box-shadow: 0 10px 24px rgb(18 60 53 / 6%);
+  background: var(--white);
+  box-shadow: 0 10px 24px var(--card-shadow);
 }
 
 .card h2,
@@ -230,7 +244,7 @@ main {
 }
 
 .weather-card {
-  background: #eef4e9;
+  background: var(--weather-background);
 }
 
 .weather-card h2 {
@@ -243,7 +257,7 @@ main {
 .weather-icon {
   width: 1.8rem;
   height: 1.8rem;
-  color: #bd741a;
+  color: var(--weather-sun);
 }
 
 .weather-data {
@@ -258,7 +272,7 @@ main {
   justify-content: space-between;
   gap: 1rem;
   padding-bottom: 0.55rem;
-  border-bottom: 1px solid #d6e0d1;
+  border-bottom: 1px solid var(--weather-divider);
 }
 
 .weather-data dd {
@@ -289,7 +303,7 @@ main {
 footer {
   padding: 1.2rem;
   background: var(--forest-deep);
-  color: #f1f5ee;
+  color: var(--footer-text);
   text-align: center;
 }
 
@@ -304,7 +318,7 @@ footer p {
   }
 
   .weather-card h2::after {
-    color: #a45b10;
+    color: var(--weather-emoji);
     content: " \2600\FE0F";
   }
 }
