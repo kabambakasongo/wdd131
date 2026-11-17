@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tell Tech Atlas your experience and interests to get a personalized technology learning path.">
+    <meta name="author" content="Kabamba Kasongo Ledoux">
+    <title>Find Your Path | Tech Atlas</title>
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/path.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="TA Tech Atlas home">
+            <span class="brand-mark" aria-hidden="true">TA</span>
+            <span>Tech Atlas</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false"
+            aria-controls="primary-nav"></button>
+        <nav id="primary-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="topics.html">Topics</a>
+            <a href="path.html" aria-current="page">Find Your Path</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-head">
+            <p class="eyebrow">Personal guide</p>
+            <h1>Find your learning path</h1>
+            <p>
+                Share a little about your background and goals. The form checks your entries, saves your choices in
+                this browser, and shows a suggested first topic.
+            </p>
+        </section>
+
+        <div class="path-layout">
+            <form id="path-form" novalidate>
+                <div class="form-row">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" required minlength="2" autocomplete="name">
+                    <span class="hint">At least two characters.</span>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                    <span class="hint">Used only to address your saved plan.</span>
+                </div>
+
+                <div class="form-row">
+                    <label for="experience">Experience level</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Choose a level</option>
+                        <option value="beginner">New to technology</option>
+                        <option value="some">Some experience</option>
+                        <option value="advanced">Comfortable with the basics</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="interest">Main interest</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Choose a subject</option>
+                        <option value="web">How the web works</option>
+                        <option value="computing">Computing fundamentals</option>
+                        <option value="ai">Artificial intelligence</option>
+                        <option value="security">Digital safety</option>
+                        <option value="data">Data and privacy</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="goal">What do you want to do?</label>
+                    <textarea id="goal" name="goal" required minlength="10"
+                        placeholder="For example: build my own website"></textarea>
+                    <span class="hint">At least ten characters.</span>
+                </div>
+
+                <div class="checkbox-row">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Email me one new guide each week.</label>
+                </div>
+
+                <button type="submit">Save my path</button>
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside class="path-aside" aria-labelledby="how-title">
+                <h2 id="how-title">How this works</h2>
+                <ul>
+                    <li>Pick the subject that interests you most.</li>
+                    <li>Your choices are checked and saved on this device.</li>
+                    <li>We suggest the first guide to read from the topic library.</li>
+                </ul>
+            </aside>
+        </div>
+
+        <div id="saved-preferences" class="saved-preferences" hidden></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Kabamba Kasongo Ledoux · Tech Atlas</p>
+        <p id="last-modified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>

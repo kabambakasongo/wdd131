@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse beginner-friendly technology guides by topic: web, computing, artificial intelligence, security, and data.">
+    <meta name="author" content="Kabamba Kasongo Ledoux">
+    <title>Topics | Tech Atlas</title>
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="TA Tech Atlas home">
+            <span class="brand-mark" aria-hidden="true">TA</span>
+            <span>Tech Atlas</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false"
+            aria-controls="primary-nav"></button>
+        <nav id="primary-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="topics.html" aria-current="page">Topics</a>
+            <a href="path.html">Find Your Path</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-head">
+            <p class="eyebrow">Topic library</p>
+            <h1>Explore technology topics</h1>
+            <p>
+                Choose a category to narrow the list. Every guide is written for someone who wants a clear starting
+                point, not a pile of jargon.
+            </p>
+        </section>
+
+        <div class="filter-bar" role="group" aria-label="Filter topics by category">
+            <button class="filter-btn active" type="button" data-category="all">All topics</button>
+            <button class="filter-btn" type="button" data-category="web">Web</button>
+            <button class="filter-btn" type="button" data-category="computing">Computing</button>
+            <button class="filter-btn" type="button" data-category="ai">Artificial intelligence</button>
+            <button class="filter-btn" type="button" data-category="security">Security</button>
+            <button class="filter-btn" type="button" data-category="data">Data</button>
+        </div>
+
+        <h2 class="visually-hidden">Guide list</h2>
+        <p id="result-count" class="result-count" aria-live="polite"></p>
+
+        <div id="topic-grid" class="card-grid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Kabamba Kasongo Ledoux · Tech Atlas</p>
+        <p id="last-modified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+    <script src="scripts/topics.js"></script>
+</body>
+
+</html>
