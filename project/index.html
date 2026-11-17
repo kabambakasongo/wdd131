@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the Democratic Republic of the Congo: the Congo River, Virunga National Park, active volcanoes, and vibrant culture.">
+    <meta name="author" content="Kabamba Kasongo Ledoux">
+    <title>Discover the DRC | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Discover the DRC home">
+            <span class="brand-mark" aria-hidden="true">DRC</span>
+            <span>Discover the DRC</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false"
+            aria-controls="primary-nav"></button>
+        <nav id="primary-nav" aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="plan.html">Plan Your Visit</a>
+        </nav>
+    </header>
+
+    <main>
+        <figure class="hero">
+            <picture>
+                <source srcset="images/drc-hero-720.webp 720w, images/drc-hero-1440.webp 1440w"
+                    sizes="(max-width: 720px) 100vw, 1100px" type="image/webp">
+                <img src="images/drc-hero-1440.webp"
+                    alt="The Congo River winding through lush green tropical hills" width="1440" height="810"
+                    fetchpriority="high">
+            </picture>
+            <figcaption class="hero-caption">
+                <p class="eyebrow">Central Africa</p>
+                <h1>One country. A world of nature.</h1>
+                <p>Explore the rivers, rainforests, and living cultures of the Democratic Republic of the Congo.</p>
+            </figcaption>
+        </figure>
+
+        <section class="intro" aria-labelledby="intro-title">
+            <div>
+                <p class="eyebrow">Welcome</p>
+                <h2 id="intro-title">The heart of Africa awaits</h2>
+                <p>
+                    The Democratic Republic of the Congo is a vast Central African nation shaped by the
+                    Congo River and the world's second-largest tropical rainforest. Its landscapes support
+                    rich wildlife and warm, diverse communities. This site is a starting point for anyone
+                    curious about traveling there.
+                </p>
+                <p>
+                    Use the <a href="destinations.html">destinations</a> page to browse places by interest, or
+                    head to <a href="plan.html">plan your visit</a> to tell us what you would like to see.
+                </p>
+            </div>
+            <dl class="facts">
+                <div>
+                    <dt>Capital</dt>
+                    <dd>Kinshasa</dd>
+                </div>
+                <div>
+                    <dt>Region</dt>
+                    <dd>Central Africa</dd>
+                </div>
+                <div>
+                    <dt>Official language</dt>
+                    <dd>French</dd>
+                </div>
+                <div>
+                    <dt>Currency</dt>
+                    <dd>Congolese franc</dd>
+                </div>
+                <div>
+                    <dt>Rainforest rank</dt>
+                    <dd>2nd largest</dd>
+                </div>
+                <div>
+                    <dt>Best for</dt>
+                    <dd>Nature &amp; culture</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="section" aria-labelledby="highlights-title">
+            <div class="section-head">
+                <p class="eyebrow">Why visit</p>
+                <h2 id="highlights-title">Highlights of the DRC</h2>
+                <p>Three reasons travelers put the Congo basin on their list.</p>
+            </div>
+            <div class="card-grid">
+                <article class="card">
+                    <img src="https://picsum.photos/seed/congo-river/600/400" alt="The wide Congo River" width="600"
+                        height="400" loading="lazy">
+                    <div class="card-body">
+                        <span class="tag">River</span>
+                        <h3>Life on the water</h3>
+                        <p>The Congo River is the deepest river in the world and a lifeline for trade, travel, and
+                            wildlife.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/seed/virunga/600/400" alt="Mountain gorillas in Virunga"
+                        width="600" height="400" loading="lazy">
+                    <div class="card-body">
+                        <span class="tag">Wildlife</span>
+                        <h3>Rare wildlife</h3>
+                        <p>Gorillas, bonobos, and forest elephants live in reserves found nowhere else on Earth.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/seed/kinshasa/600/400" alt="A busy street in Kinshasa" width="600"
+                        height="400" loading="lazy">
+                    <div class="card-body">
+                        <span class="tag">Culture</span>
+                        <h3>Living culture</h3>
+                        <p>From rumba music to bustling markets, Congolese cities are full of rhythm and color.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Kabamba Kasongo Ledoux · Democratic Republic of the Congo</p>
+        <p id="last-modified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>

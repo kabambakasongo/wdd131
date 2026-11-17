@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Plan your visit to the Democratic Republic of the Congo. Share your travel interests and save your preferences.">
+    <meta name="author" content="Kabamba Kasongo Ledoux">
+    <title>Plan Your Visit | Discover the DRC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/plan.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Discover the DRC home">
+            <span class="brand-mark" aria-hidden="true">DRC</span>
+            <span>Discover the DRC</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false"
+            aria-controls="primary-nav"></button>
+        <nav id="primary-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="destinations.html">Destinations</a>
+            <a href="plan.html" aria-current="page">Plan Your Visit</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-head">
+            <p class="eyebrow">Get ready to travel</p>
+            <h1>Plan your visit</h1>
+            <p>
+                Tell us what you would like to see in the Democratic Republic of the Congo. Your preferences are
+                saved in your browser so they are ready the next time you return.
+            </p>
+        </section>
+
+        <div class="plan-layout">
+            <form id="travel-form" novalidate>
+                <div class="form-row">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                    <span class="hint">We only use this to follow up on your travel plan.</span>
+                </div>
+
+                <div class="form-row">
+                    <label for="interest">Main interest</label>
+                    <select id="interest" name="interest" required>
+                        <option value="">Choose an interest</option>
+                        <option value="wildlife">Wildlife and national parks</option>
+                        <option value="water">Rivers and lakes</option>
+                        <option value="landscape">Volcanoes and landscapes</option>
+                        <option value="culture">Cities and culture</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">What would you like to experience?</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div class="checkbox-row">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Send me travel tips by email.</label>
+                </div>
+
+                <button type="submit">Save my preferences</button>
+                <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <aside class="plan-aside">
+                <h2>Good to know</h2>
+                <ul>
+                    <li>French is the official language; Lingala and Swahili are widely spoken.</li>
+                    <li>The best time for wildlife viewing is the drier season.</li>
+                    <li>Travel with a licensed guide in national parks.</li>
+                    <li>Bring light rain gear for the rainforest.</li>
+                </ul>
+            </aside>
+        </div>
+
+        <div id="saved-preferences" class="saved-preferences" hidden></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Kabamba Kasongo Ledoux · Democratic Republic of the Congo</p>
+        <p id="last-modified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>

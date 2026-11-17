@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse top destinations in the Democratic Republic of the Congo by interest: rivers, wildlife, landscapes, and cities.">
+    <meta name="author" content="Kabamba Kasongo Ledoux">
+    <title>Destinations | Discover the DRC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/destinations.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Discover the DRC home">
+            <span class="brand-mark" aria-hidden="true">DRC</span>
+            <span>Discover the DRC</span>
+        </a>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false"
+            aria-controls="primary-nav"></button>
+        <nav id="primary-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="destinations.html" aria-current="page">Destinations</a>
+            <a href="plan.html">Plan Your Visit</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-head">
+            <p class="eyebrow">Places to see</p>
+            <h1>Destinations in the DRC</h1>
+            <p>
+                Filter the list below by what interests you most. Every destination is drawn from a data set that
+                powers this page with JavaScript.
+            </p>
+        </section>
+
+        <div class="filter-bar" role="group" aria-label="Filter destinations by interest">
+            <button class="filter-btn active" type="button" data-region="all">All</button>
+            <button class="filter-btn" type="button" data-region="water">Rivers &amp; lakes</button>
+            <button class="filter-btn" type="button" data-region="wildlife">Wildlife</button>
+            <button class="filter-btn" type="button" data-region="landscape">Landscapes</button>
+            <button class="filter-btn" type="button" data-region="city">Cities</button>
+        </div>
+
+        <p id="result-count" class="result-count" aria-live="polite"></p>
+
+        <div id="destination-grid" class="card-grid"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Kabamba Kasongo Ledoux · Democratic Republic of the Congo</p>
+        <p id="last-modified"></p>
+        <p><a href="references.html">References</a></p>
+    </footer>
+</body>
+
+</html>
